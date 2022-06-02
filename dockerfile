@@ -8,4 +8,4 @@ CMD rm -r /var/www/html \
 
 FROM mysql:debian
 ENV MYSQL_TCP_PORT=4002
-CMD mysqld
+CMD tail -f /dev/null
