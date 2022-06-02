@@ -10,6 +10,6 @@ CMD rm -r /var/www/html \
 
 
 FROM mysql:debian
-CMD mysqld \
-    && ENV MYSQL_TCP_PORT=4003 
+ENV MYSQL_TCP_PORT=4003
+CMD mysqld
     
