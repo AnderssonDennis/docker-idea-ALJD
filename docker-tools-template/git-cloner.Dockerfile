@@ -5,6 +5,8 @@ FROM node:16.15-buster
 RUN apt update
 RUN apt install git
 
+RUN docker-php-ext-install mysqli
+
 # Set a work dir (working directory)
 WORKDIR /app
 
