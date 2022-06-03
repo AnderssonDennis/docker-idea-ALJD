@@ -1,6 +1,4 @@
 FROM node:16.15-buster
 
 
-CMD npm install && npm start && npm run dev
-
-
+CMD npm install && npm run dev
