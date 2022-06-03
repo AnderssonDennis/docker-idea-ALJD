@@ -1,6 +1,6 @@
-FROM node:16
+FROM node:16.15-buster
 
 
-CMD node
+CMD npm install && node index
 
 
