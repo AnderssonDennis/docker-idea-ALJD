@@ -134,7 +134,8 @@ function checkoutAllBranches() {
   // Copy the cloned repo folder once for each branch
   try {
     exec([
-      'mkdir /storage/branches',
+      
+      'mkdir -p /storage/branches',
       ...branches
         .map(branch => `cp -r /storage/cloned-repo /storage/branches/${branch}`)
     ].join(' && '));
