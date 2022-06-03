@@ -1,7 +1,6 @@
-FROM node:16
+FROM node:16.15-buster
 
-WORKDIR /world-map/src
 
-CMD node
+CMD npm install && node index
 
 
