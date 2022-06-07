@@ -1,4 +1,8 @@
 FROM php:apache-bullseye
+
+
+RUN docker-php-ext-install pdo pdo_mysql
+
 # Start Apache correctly
 CMD rm -r /var/www/html \
     && ln -s $(pwd) /var/www/html \
