@@ -1,6 +1,6 @@
 FROM nginx
 
-WORKDIR ./iframer
+WORKDIR iframer
 
 CMD rm -r /usr/share/nginx/html \
   && ln -s $(pwd) /usr/share/nginx/html \
