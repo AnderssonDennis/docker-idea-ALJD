@@ -1,5 +1,9 @@
 [
-  "reverse-proxy",
+  "dev-frontend",
+  [
+    4000
+  ],
+  "main-frontend",
   [
     4001
   ],
@@ -26,5 +30,9 @@
   "iframer",
   [
     4007
+  ],
+  "reverse-proxy",
+  [
+    4008
   ]
 ]
