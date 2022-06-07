@@ -2,11 +2,11 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
+
 export default defineConfig({
   plugins: [react()],
   server: {
-    // use process.env.PORT
-    // to read the environment variable
-    port: process.env.PORT
+    port: process.env.PORT,
+    hmr: false
   }
 })
