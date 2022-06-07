@@ -1,2 +1,6 @@
-FROM mysql:debian
-CMD tail -f /dev/null
+FROM bitnami/mysql:5.7.38
+
+ENV ALLOW_EMPTY_PASSWORD=yes
+
+
+ENV MYSQL_PORT_NUMBER=$PORT
