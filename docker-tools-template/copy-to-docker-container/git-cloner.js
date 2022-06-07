@@ -10,7 +10,7 @@ const {
 } = process.env;
 
 const gitRepoSsh = 'git@github.com:'
-  + gitRepoUrl.split('github.com/')[1];
+  + gitRepoUrl.split(':').join('/').split('github.com/')[1];
 
 const dockerSettings = readAndParseDockerSettings();
 
@@ -134,8 +134,7 @@ function checkoutAllBranches() {
   // Copy the cloned repo folder once for each branch
   try {
     exec([
-      
-      'mkdir -p /storage/branches',
+      'mkdir /storage/branches',
       ...branches
         .map(branch => `cp -r /storage/cloned-repo /storage/branches/${branch}`)
     ].join(' && '));
@@ -176,7 +175,15 @@ function buildComposeFile() {
     // the vite developer server gets confused otherwise...
     port = hostPort || port;
 
-    if (fs.existsSync(`/storage/branches/${branch}/Dockerfile`)) {
+    let dfilepath = `/storage/branches/${branch}/Dockerfile`;
+    if (fs.existsSync(dfilepath)) {
+
+      // Replace $PORT in Dockerfile to make it easier to set the
+      // port of the service
+      let a = fs.readFileSync(dfilepath, 'utf-8');
+      a = a.replace(/\$PORT/g, port);
+      fs.writeFileSync(dfilepath, a, 'utf-8');
+
       let name = gitRepoName + '-' + branch;
       let workingDir = `/storage/branches/${branch}`;
       yml = [

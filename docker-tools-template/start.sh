@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #set -e # exit on failed commands
 
 # Get the dir path of the dir where this script is located
