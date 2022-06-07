@@ -1,3 +1,3 @@
-FROM mongo:5.0.9-focal
+FROM mongo:5.0
 
-CMD CMD tail -f /dev/null
+CMD mongod --port=$PORT --bind_ip_all
