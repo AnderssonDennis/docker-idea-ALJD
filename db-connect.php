@@ -5,8 +5,8 @@ if(count(get_included_files()) ==1 && !isset($_GET["populateDB"])){
 }
 
 // Connection details for MySQL server
-$host = 'country-info-db-main'; // change to name of container
-$port = '8010';
+$host = 'country-info-database'; // change to name of container
+$port = '4006';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
