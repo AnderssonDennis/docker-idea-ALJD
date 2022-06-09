@@ -1,7 +1,7 @@
 const path = require('path');
 const mongoose = require('mongoose');
 
-const connection = 'mongodb://capitals-database:4006/capitals-db';
+const connection = 'mongodb://country-info:4003/capitals-db';
 
 function dbConnectWithRetry() {
   return new Promise(res => {
