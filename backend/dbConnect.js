@@ -1,7 +1,8 @@
 const path = require('path');
 const mongoose = require('mongoose');
 
-const connection = 'mongodb://country-info:4003/capitals-db';
+// mongodb://docker-containername:port-for-container/name-of-database
+const connection = 'mongodb://capitals-database:4006/capitals-db';
 
 function dbConnectWithRetry() {
   return new Promise(res => {
