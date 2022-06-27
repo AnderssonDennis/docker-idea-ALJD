@@ -121,7 +121,7 @@ Refer to the documentation about the container you are using (MySQL, MariaDB, Mo
 
 In our dockerfiles we have different commands for how we want to run our image. Down below is a brief explanation.
 
-Country-info dockerfile
+# Country-info dockerfile
 
 RUN docker-php-ext-install pdo pdo_mysql
 
@@ -135,5 +135,16 @@ CMD rm -r /var/www/html \
 
   These commands deletes the Apache root folder /var/www/html, creates a symbolic link pointing
   towards our work dir, replaces port 80 to our own in the Apache config files and then runs Apache.
+
+
+
+# Capital-info dockerfile
+
+CMD npm install && npm run dev
+
+ These commands installs npm and then runs in Vite development mode.
+
+
+
 
   
