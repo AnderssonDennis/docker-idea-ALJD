@@ -57,7 +57,7 @@ FROM node:16.15-buster
 CMD npm install && node index
 ```
 
-**Important:** - do not specify a WORK DIR. It will be set to where the code for your branch is checked out within Dockers container/named volume systems automatically.
+**Important:** - You dont need to specify a WORK DIR. This is done automaticly when running the shellscripts. The WORKD DIR will be set to where the code is checked out in your branch within dockers containers/volume
 
 ### Create a dockerSettings.json file
 The dockerSettings.json should contain info about which branches you want to create containers from (your own one and other branches with services you want to communicate with) and on which port they should be running:
