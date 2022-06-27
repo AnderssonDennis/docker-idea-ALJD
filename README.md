@@ -141,3 +141,22 @@ Create a separate branch with your Dockerfile (and backup like SQL-dumps etc).
 Refer to the documentation about the container you are using (MySQL, MariaDB, MongoDB etc) for how to start the db server on a particular port!
 
 **Important!** If the server/service needs a command line argument rather than an environment variable to set the port it is starting on -  refter to the Docker documentation on how to read environment variables in your Dockerfile and pass them along as comman line arguments in your start CMD!
+
+
+
+#### Dockerfiles and how the commands work
+
+In our dockerfiles we have different commands for how we want to run our image. Down below is a brief explanation.
+
+Country-info dockerfile
+
+CMD rm -r /var/www/html \
+  && ln -s $(pwd) /var/www/html \
+  && sed -i "s/80/$PORT/" /etc/apache2/sites-enabled/000-default.conf \
+  && sed -i "s/80/$PORT/" /etc/apache2/ports.conf \
+  && apache2-foreground
+
+  These commands deletes the Apache root folder /var/www/html, creates a symbolic link pointing
+  towards our work dir, replaces port 80 to our own in the Apache config files and then runs Apache.
+
+  
