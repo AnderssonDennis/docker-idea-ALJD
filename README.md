@@ -14,6 +14,9 @@ This is the Readme file to help and guide you on how to get up and running.
 ## Branches
 This GitHub repo will serve you the containers you need to get going. We have a main branch that we use as a base branch to create branch of with different microservices. We already created the branches needed so that all teams can create their own branches if needed to work on their on microservice. The docker branch is the default branch and it will serve you with the tools needed to run your development enviroment in the containers.
 
+## Docker
+We created all tools for you to be able to start and stop containers. If you are not familiar with docker we suggest using docker desktop you will be able to start and stop single containers directly instead of using terminal.
+
 ## How to get started!
 When you use the /.start script the first time it will not run correctly. BUT it will give you a SSH-key in the terminal and provide you with information on how to procced so that you can use the script. The script will fail untill you add the SSH-key to your GitHub account.
 
