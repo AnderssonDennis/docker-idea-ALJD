@@ -11,6 +11,9 @@ For this purpose we have chosen Docker in conjunction with our own setup for aut
 
 This is the Readme file to help and guide you on how to get up and running.
 
+## Branches
+This GitHub repo will serve you the containers you need to get going. We have a main branch that we use as a base branch to create branch of with different microservices. We already created the branches needed so that all teams can create their own branches if needed to work on their on microservice. The docker branch is the default branch and it will serve you with the tools needed to run your development enviroment in the containers.
+
 ## How to get started!
 Checkout the docker branch and run the following command in your terminal:
 
