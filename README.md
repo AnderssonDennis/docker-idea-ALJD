@@ -123,6 +123,10 @@ In our dockerfiles we have different commands for how we want to run our image. 
 
 Country-info dockerfile
 
+RUN docker-php-ext-install pdo pdo_mysql
+
+  This command installs the PHP driver for MYSQL
+
 CMD rm -r /var/www/html \
   && ln -s $(pwd) /var/www/html \
   && sed -i "s/80/$PORT/" /etc/apache2/sites-enabled/000-default.conf \
