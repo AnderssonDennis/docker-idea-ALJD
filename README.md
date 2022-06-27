@@ -103,9 +103,6 @@ The dockerSettings.json should contain info about which branches you want to cre
 ]
 ```
 
-**Coming soon:** You will soon be able to add proxy routes for the reverse proxy alongside the port numbers as well!
-
-
 ### Important! Listen to the environment variable PORT when you start your service!
 
 The system sends an environment variable called PORT to your container (each branch runs in a container that you setup by writing a Dockerfile in your branch).
