@@ -66,11 +66,39 @@ The dockerSettings.json should contain info about which branches you want to cre
 [
   "dev-frontend",
   [
-    4001
+    4000
   ],
   "main-frontend",
   [
-    4000
+    4001
+  ],
+  "country-info-database",
+  [
+    4002
+  ],
+  "country-info",
+  [
+    4003
+  ],
+  "world-map",
+  [
+    4004
+  ],
+  "capital-info",
+  [
+    4005
+  ],
+  "capitals-database",
+  [
+    4006
+  ],
+  "iframer",
+  [
+    4007
+  ],
+  "reverse-proxy",
+  [
+    4008
   ]
 ]
 ```
