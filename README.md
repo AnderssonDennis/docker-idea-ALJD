@@ -1,6 +1,7 @@
-Hello developer!
+Hello developers!
 
 This is a message from your friendly DevOp!
+Dennis, Jesper, Ali and Andreas will be supporting you through out this project.
 
 ## Exciting times!
 Finally we are moving from a monolith application development model to systems built upon microservices.
@@ -71,34 +72,6 @@ The dockerSettings.json should contain info about which branches you want to cre
   "main-frontend",
   [
     4001
-  ],
-  "country-info-database",
-  [
-    4002
-  ],
-  "country-info",
-  [
-    4003
-  ],
-  "world-map",
-  [
-    4004
-  ],
-  "capital-info",
-  [
-    4005
-  ],
-  "capitals-database",
-  [
-    4006
-  ],
-  "iframer",
-  [
-    4007
-  ],
-  "reverse-proxy",
-  [
-    4008
   ]
 ]
 ```
