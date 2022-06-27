@@ -145,6 +145,16 @@ CMD npm install && npm run dev
  These commands installs npm and then runs in Vite development mode.
 
 
+# Capital-database
+
+CMD mongod --port=$PORT --bind_ip_all
+
+mongod starts mongoDB
+
+$PORT allows you to specify a port but we must also specify an ip(external ip for the server)
+since we dont know wich ip number docker uses for our container we --bind_ip_all.
+
+
 
 
   
