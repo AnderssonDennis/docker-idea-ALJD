@@ -9,12 +9,7 @@ This means that we need a new development environment and build system where the
 
 For this purpose we have chosen Docker in conjunction with our own setup for automating Docker.
 
-We will start with 
-* different teams in teh same main project having the code for their service in specific branches.
-* your team can create as many branches you want, but you start with branching out the main branch and call your base branch "main-service-name".
-* then you can create dev and feature branches according to the same naming convention (dev-service-name, feature-some-feature-service-name etc).
-
-**Note:** Should we need to separate the code further we might move each service into separate repositories. But we will wait with doing that.
+This is the Readme file to help and guide you on how to get up and running.
 
 ## How to get started!
 Checkout the docker branch and run the following command in your terminal:
