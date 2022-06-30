@@ -185,7 +185,7 @@ CMD rm -r /usr/share/nginx/html \
   && nginx -g "daemon off;" 
 
 These commands:
-  -delete the reeal Nginx root folder
-  -make a symblic link which pointing to our owrk dir
-  -replace port 80 with our port in the config file 
-  -start Nginx
+  first:  delete the reeal Nginx root folder
+  Then:  make a symblic link which pointing to our owrk dir
+  Then:  replace port 80 with our port in the config file 
+  Then:  start Nginx
