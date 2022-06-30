@@ -167,14 +167,14 @@ $PORT allows you to specify a port but we must also specify an ip(external ip fo
 since we dont know wich ip number docker uses for our container we --bind_ip_all.
 
 
-### Reverse-proxy  
+### Reverse-proxy dockerfile 
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
 This command replaces the original conifig with our own.
 
 
-### Iframer Dockerfile
+### Iframer dockerfile
 
 FROM nginx  
 This command creates a layer from the officisal nginx Image
