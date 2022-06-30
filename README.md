@@ -176,9 +176,16 @@ This command replaces the original conifig with our own.
 
 ### Iframer Dockerfile
 
-FROM nginx   This command creates a layer from the nginx
+FROM nginx  
+This command creates a layer from the officisal nginx Image
 
 CMD rm -r /usr/share/nginx/html \
   && ln -s $(pwd) /usr/share/nginx/html \
   && sed -i "s/80/$PORT/" /etc/nginx/conf.d/default.conf \
   && nginx -g "daemon off;" 
+
+These commands:
+  -delete the reeal Nginx root folder
+  -make a symblic link which pointing to our owrk dir
+  -replace port 80 with our port in the config file 
+  -start Nginx
