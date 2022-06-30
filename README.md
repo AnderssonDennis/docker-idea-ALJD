@@ -176,7 +176,7 @@ This command replaces the original conifig with our own.
 
 ### Iframer Dockerfile
 
-FROM nginx   his command Creates a layer from the nginx
+FROM nginx   This command creates a layer from the nginx
 
 CMD rm -r /usr/share/nginx/html \
   && ln -s $(pwd) /usr/share/nginx/html \
