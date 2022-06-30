@@ -137,15 +137,13 @@ CMD rm -r /var/www/html \
   towards our work dir, replaces port 80 to our own in the Apache config files and then runs Apache.
 
 
-### Country-info-database
+### Country-info-database dockerfile
 
 ENV ALLOW_EMPTY_PASSWORD=yes
  This commands allows us to use an epmty password and thus makes it easier during development.
 
 ENV MYSQL_PORT_NUMBER=$PORT
  Allows us to set the port for mySQL server
-
-
 
 
 
@@ -157,7 +155,7 @@ CMD npm install && npm run dev
  These commands installs npm and then runs in Vite development mode.
 
 
-### Capital-database
+### Capitals-database dockerfile
 
 CMD mongod --port=$PORT --bind_ip_all
 
